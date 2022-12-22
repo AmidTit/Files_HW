@@ -26,17 +26,17 @@ with open(path_3, encoding = 'utf-8') as file_3:
     len_f_3 = len(file_3)
 
 with open(path_result, 'a', encoding = 'utf - 8') as result_file:
-    # files_list = [file_1, file_2, file_3]
-    # files_list.sort()
-    # count = -1
-    # for element in files_list:
-    #    result_file.write("Имя файла")
-    #    result_file.write('\n' + str(len(files_list[count]))+ '\n')
-    #    result_file.writelines(files_list[count])
-    #    count -= 1
-    pass
+    files_list = [file_1, file_2, file_3]
+    files_list.sort()
+    count = -1
+    for element in files_list:
+       result_file.write("Имя файла")
+       result_file.write('\n' + str(len(files_list[count]))+ '\n')
+       result_file.writelines(files_list[count])
+       count -= 1
+    
 
-print(path_1, type(path_1))
+
     
    
 
