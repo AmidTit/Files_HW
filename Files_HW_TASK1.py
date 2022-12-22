@@ -23,6 +23,6 @@ with open(full_path, encoding = 'utf-8') as file:
         file.readline()
         cook_book[dish_name] = ingredients
        
-pprint(cook_book, width = 1, sort_dicts = False)  
+pprint(cook_book, sort_dicts = False)  
     
 
