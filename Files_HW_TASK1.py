@@ -1,4 +1,5 @@
 import os
+from pprint import pprint
 FILE_NAME = 'recipes.txt'
 FILE_DIR = '2.4.files'
 ROOT_PATH = os.getcwd()
@@ -18,10 +19,10 @@ with open(full_path, encoding = 'utf-8') as file:
                 "ingredient_name": ingredient_name,
                 "quantity": quantity,
                 "measure" : measure
-            })
-        file.readline()   
+            })   
+        file.readline()
         cook_book[dish_name] = ingredients
        
-print(cook_book)   
+pprint(cook_book, width = 1, sort_dicts = False)  
     
 
